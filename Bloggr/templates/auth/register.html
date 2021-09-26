@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block header %}
+{% endblock %}
+
+{% block content %}
+<div class="register-form">
+    <form method="post">
+        <h2 class="text-center">Register</h2>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" placeholder="Username" name="username" id="username" required="required">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" placeholder="Password" name="password" id="password" required="required">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+        </div>
+    </form>
+</div>
+<!--  <form method="post">-->
+<!--    <label for="username">Username</label>-->
+<!--    <input name="username" id="username" required>-->
+<!--    <label for="password">Password</label>-->
+<!--    <input type="password" name="password" id="password" required>-->
+<!--    <input type="submit" value="Register">-->
+<!--  </form>-->
+{% endblock %}
